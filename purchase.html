@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="en">
+    <meta name="author" content="Browser Chooser Contributors">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a1a1a">
+    
+    <title>Support Browser Chooser - Pay What You Want</title>
+    <meta name="description" content="Support the development of Browser Chooser with a donation. Pay what you want to help us build the best URL router for macOS and Windows.">
+    <link rel="canonical" href="https://browser-chooser.github.io/purchase.html">
+    
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="browser chooser, support, donate, contribute, open source">
+    
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="Support Browser Chooser">
+    <meta property="og:description" content="Support the development of Browser Chooser with a donation. Pay what you want.">
+    <meta property="og:url" content="https://browser-chooser.github.io/purchase.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Browser Chooser">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Support Browser Chooser">
+    <meta name="twitter:description" content="Support the development of Browser Chooser with a donation.">
+    
+    <!-- Performance Meta Tags -->
+    <link rel="dns-prefetch" href="https://github.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </header>
+        
+        <main class="purchase-card">
+            <h1>Support Browser Chooser</h1>
+            <p class="subtitle">Pay what you want to support development.</p>
+            
+            <div class="price-display">
+                <span class="currency">$</span><span id="price-value">5</span>
+            </div>
+            
+            <div class="slider-container">
+                <input type="range" id="price-slider" min="0" max="50" value="5" step="1">
+                <div class="slider-labels">
+                    <span>Free</span>
+                    <span>$50+</span>
+                </div>
+            </div>
+            
+            <button id="buy-button" class="btn-primary">Purchase for $5</button>
+            
+            <p class="note">Secure payment processing via Stripe (Placeholder)</p>
+        </main>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

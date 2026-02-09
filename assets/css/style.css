@@ -1,0 +1,560 @@
+/* =========================================
+   1. Variables & Reset
+   ========================================= */
+:root {
+    /* Palette - Shottr.cc Style */
+    --color-bg: #ffffff;
+    --color-text: #1d1d1f;
+    --color-text-secondary: #555555;
+    --color-primary: #FA5726; /* Deep Orange */
+    --color-primary-gradient-start: #FF9247;
+    --color-primary-gradient-mid: #FF763A;
+    --color-primary-gradient-end: #FA5726;
+    
+    --color-bg-alt: #f9f9f9;
+    --color-border: #e5e5e5;
+    
+    /* Typography */
+    --font-family-heading: "Museo Slab", "Rockwell", "Roboto Slab", "Georgia", serif;
+    --font-family-body: "Avenir Next", "Avenir", "Century Gothic", "Helvetica Neue", sans-serif;
+    
+    /* Spacing & Layout */
+    --radius-lg: 12px;
+    --radius-md: 8px;
+    --container-width: 1100px;
+    
+    /* Shadows */
+    --shadow-card: 0 10px 20px -4px rgba(0,0,0,0.05), 0 2px 4px 0 rgba(0,0,0,0.05);
+    --shadow-button: 0 40px 40px 0 rgba(145,41,0,0.20), 0 4px 8px -2px rgba(0,0,0,0.08), 0 1px 1px 0 rgba(0,0,0,0.20), inset 0 -1px 3px 0 rgba(0,0,0,0.10), inset 0 2px 1px 0 #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #d94012;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================================
+   2. Global Layout
+   ========================================= */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: var(--font-family-heading);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: var(--color-text);
+}
+
+h1 { font-size: 56px; }
+h2 { font-size: 42px; }
+h3 { font-size: 22px; font-weight: 600; }
+h4 { font-size: 18px; }
+
+p {
+    color: var(--color-text-secondary);
+    font-size: 18px;
+    margin-bottom: 24px;
+    /* max-width: 650px; */
+}
+
+/* =========================================
+   3. Header
+   ========================================= */
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 24px 0;
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: -0.01em;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.site-nav a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.site-nav a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.site-nav .btn {
+    background: rgba(255,255,255,0.2);
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: white;
+    box-shadow: none;
+}
+
+.site-nav .btn:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* =========================================
+   4. Hero Section
+   ========================================= */
+.hero {
+    text-align: center;
+    padding: 160px 0 100px;
+    background: radial-gradient(900px circle at 50% 100%, var(--color-primary-gradient-start) 0%, var(--color-primary-gradient-mid) 57%, var(--color-primary-gradient-end) 95%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.hero-title {
+    color: white;
+    margin-bottom: 24px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 auto 32px;
+    font-size: 22px;
+    line-height: 1.5;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.rotating-text {
+    display: inline-grid;
+    vertical-align: bottom;
+    height: 1.2em;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 0.2em;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    /* max-width: 400px; */
+}
+
+.rotating-text span {
+    grid-area: 1/1;
+    animation: rotate-text 12s infinite;
+    opacity: 0;
+    transform: translateY(30px);
+    white-space: nowrap;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.rotating-text span:nth-child(1) { animation-delay: 0s; }
+.rotating-text span:nth-child(2) { animation-delay: 3s; }
+.rotating-text span:nth-child(3) { animation-delay: 6s; }
+.rotating-text span:nth-child(4) { animation-delay: 9s; }
+
+@keyframes rotate-text {
+    0% { opacity: 0; transform: translateY(30px); }
+    4% { opacity: 1; transform: translateY(0); }
+    21% { opacity: 1; transform: translateY(0); }
+    25% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 0; transform: translateY(-30px); }
+}
+
+.hero-actions {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.btn-3d {
+    background-image: linear-gradient(180deg, #F5F5F5 0%, #E8E8E8 99%);
+    box-shadow: var(--shadow-button);
+    border-radius: 39px;
+    padding: 14px 32px;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    min-width: 200px;
+}
+
+.btn-3d:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 45px 45px 0 rgba(145,41,0,0.25), 0 4px 8px -2px rgba(0,0,0,0.08), 0 1px 1px 0 rgba(0,0,0,0.20), inset 0 -1px 3px 0 rgba(0,0,0,0.10), inset 0 2px 1px 0 #FFFFFF;
+}
+
+.btn-3d:active {
+    transform: translateY(2px);
+    box-shadow: 0 30px 30px 0 rgba(145,41,0,0.15), 0 2px 4px -2px rgba(0,0,0,0.08), inset 0 -1px 3px 0 rgba(0,0,0,0.10), inset 0 2px 1px 0 #FFFFFF;
+}
+
+.btn-3d:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.btn-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+}
+
+.btn-sub {
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.hero-image-container {
+    perspective: 1000px;
+    padding: 0 20px;
+}
+
+.hero-image-placeholder {
+    width: 100%;
+    max-width: 960px;
+    height: 540px;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transform: rotateX(2deg);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.play-button {
+    width: 80px;
+    height: 80px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(250, 87, 38, 0.4);
+    margin-bottom: 16px;
+}
+
+.play-button::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 20px;
+    border-color: transparent transparent transparent white;
+    margin-left: 4px;
+}
+
+.placeholder-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #999;
+    font-weight: 500;
+}
+
+/* =========================================
+   5. Features Section
+   ========================================= */
+.features {
+    background-color: #fcfcfc;
+    padding-top: 120px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+    color: #222;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.feature-card {
+    background: #FFFFFF;
+    box-shadow: var(--shadow-card);
+    border-radius: 6px;
+    padding: 40px 32px;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -4px rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.05);
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.feature-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* =========================================
+   6. FAQ Section
+   ========================================= */
+.faq {
+    background-color: #fff;
+    border-top: 1px solid var(--color-border);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item h4 {
+    margin-bottom: 12px;
+    color: #222;
+    font-size: 18px;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* =========================================
+   7. Footer
+   ========================================= */
+.site-footer {
+    background-color: #484A48;
+    padding: 60px 0;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.footer-logo {
+    font-family: var(--font-family-heading);
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    color: #aaa;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    color: #777;
+}
+
+/* =========================================
+   8. Download CTA & Utilities
+   ========================================= */
+.download-cta {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 100px 0;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Button Utilities */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #d94012;
+    transform: translateY(-1px);
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+/* =========================================
+   9. Responsive
+   ========================================= */
+@media (max-width: 768px) {
+    h1 { font-size: 40px; }
+    h2 { font-size: 32px; }
+    
+    .site-nav {
+        display: none;
+    }
+    
+    .hero {
+        padding: 120px 0 60px;
+    }
+    
+    .hero-image-placeholder {
+        height: 300px;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-3d {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* =========================================
+   10. Purchase Page Overrides
+   ========================================= */
+body:has(.purchase-card) {
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+}
+body:has(.purchase-card) .btn-primary {
+    background-color: #0071e3;
+    color: white;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 12px 24px;
+}
