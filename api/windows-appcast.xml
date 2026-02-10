@@ -23,7 +23,7 @@
             
             <!-- Download URL - update with actual GitHub release URL -->
             <enclosure 
-                url="https://github.com/parrotnavy/browser-chooser/releases/download/v0.3.1/BrowserChooser-0.3.1.msi"
+                url="https://parrotnavy.github.io/browser-chooser/dl/BrowserChooser-0.3.1.msi"
                 sparkle:version="0.3.1"
                 length="5242880"
                 type="application/octet-stream"
