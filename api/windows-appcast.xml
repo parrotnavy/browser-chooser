@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Browser Chooser (Windows)</title>
+        <link>https://parrotnavy.github.io/browser-chooser/</link>
+        <description>Smart URL router for Windows</description>
+        <language>en</language>
+        
+        <!-- Example release entry - replace with actual releases -->
+        <item>
+            <title>Version 0.3.1</title>
+            <link>https://github.com/parrotnavy/browser-chooser/releases</link>
+            <sparkle:version>0.3.1</sparkle:version>
+            <description><![CDATA[
+                <h2>What's New</h2>
+                <ul>
+                    <li>Auto-update functionality with NetSparkle</li>
+                    <li>Fluent UI theme integration</li>
+                    <li>Bug fixes and performance improvements</li>
+                </ul>
+            ]]></description>
+            <pubDate>Mon, 10 Feb 2026 12:00:00 +0000</pubDate>
+            
+            <!-- Download URL - update with actual GitHub release URL -->
+            <enclosure 
+                url="https://parrotnavy.github.io/browser-chooser/dl/BrowserChooser-0.3.1.msi"
+                sparkle:version="0.3.1"
+                length="5242880"
+                type="application/octet-stream"
+                sparkle:os="windows"
+                sparkle:signature="PLACEHOLDER_SIGNATURE_WILL_BE_GENERATED_BY_RELEASE_SCRIPT" />
+        </item>
+        
+        <!-- Add new releases above this comment -->
+        <!-- The release.sh script will automatically update this file -->
+    </channel>
+</rss>
