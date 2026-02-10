@@ -8,9 +8,9 @@
         
         <!-- Example release entry - replace with actual releases -->
         <item>
-            <title>Version 0.3.1</title>
+            <title>Version 0.3.0</title>
             <link>https://github.com/parrotnavy/browser-chooser/releases</link>
-            <sparkle:version>0.3.1</sparkle:version>
+            <sparkle:version>0.3.0</sparkle:version>
             <description><![CDATA[
                 <h2>What's New</h2>
                 <ul>
@@ -23,8 +23,8 @@
             
             <!-- Download URL - update with actual GitHub release URL -->
             <enclosure 
-                url="https://parrotnavy.github.io/browser-chooser/dl/BrowserChooser-0.3.1.msi"
-                sparkle:version="0.3.1"
+                url="https://parrotnavy.github.io/browser-chooser/dl/BrowserChooser-0.3.0.msi"
+                sparkle:version="0.3.0"
                 length="5242880"
                 type="application/octet-stream"
                 sparkle:os="windows"
