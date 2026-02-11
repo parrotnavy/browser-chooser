@@ -1,25 +1,35 @@
-<?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
         <title>Browser Chooser (macOS)</title>
         <link>https://parrotnavy.github.io/browser-chooser/</link>
         <description>Smart URL router for macOS</description>
         <language>en</language>
 
-                <item>
-            <title>Version 0.3.1</title>
-            <link>https://github.com/parrotnavy/browser-chooser/releases</link>
-            <sparkle:version>0.3.1</sparkle:version>
-            <sparkle:shortVersionString>0.3.1</sparkle:shortVersionString>
-            <description>
-                &lt;h2&gt;What's New&lt;/h2&gt;\n                &lt;ul&gt;\n                    &lt;li&gt;Bug fixes and improvements&lt;/li&gt;\n                &lt;/ul&gt;
-            </description>
-            <pubDate>Wed, 11 Feb 2026 07:40:46 +0000</pubDate>
-            
-            <enclosure url="https://parrotnavy.github.io/browser-chooser/dl/Browser-Chooser-0.3.1.dmg" sparkle:version="0.3.1" sparkle:shortVersionString="0.3.1" length="2908992" type="application/octet-stream" sparkle:edSignature="xQV5Wp0Ev3Vwl5Gcuqf36Ci9Hy/Zf/5gUg5i33S+fVDBNGOkr5F6w2K/QSGiP5j7fy2lIbeswFOyHw3NS+mdDg==" />
-        </item>
-        
         <!-- Add new releases above this comment -->
         <!-- The release.sh script will automatically update this file -->
+        
+        <item>
+            <title>Version 0.2.8</title>
+            <sparkle:version>0.2.8</sparkle:version>
+            <sparkle:shortVersionString>0.2.8</sparkle:shortVersionString>
+            <description><![CDATA[
+                <h2>What's New in 0.2.8</h2>
+                <ul>
+                    <li>Added BackupController with auto-recovery from backup</li>
+                    <li>Added Export/Import settings functionality in Settings > Advanced</li>
+                    <li>Settings now persist across uninstallation</li>
+                    <li>Fixed version comparison bug in Sparkle auto-update</li>
+                </ul>
+            ]]></description>
+            <pubDate>Wed, 12 Feb 2026 04:31:00 +0000</pubDate>
+            <enclosure 
+                url="https://parrotnavy.github.io/browser-chooser/dl/Browser-Chooser-0.2.8.dmg"
+                sparkle:version="0.2.8"
+                sparkle:shortVersionString="0.2.8"
+                length="1"
+                type="application/octet-stream"
+                sparkle:edSignature="PLACEHOLDER_WILL_BE_REPLACED_BY_RELEASE_SCRIPT" />
+        </item>
     </channel>
 </rss>

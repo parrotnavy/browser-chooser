@@ -8,5 +8,28 @@
 
         <!-- Add new releases above this comment -->
         <!-- The release.sh script will automatically update this file -->
+        
+        <item>
+            <title>Version 0.3.1</title>
+            <sparkle:version>0.3.1</sparkle:version>
+            <sparkle:shortVersionString>0.3.1</sparkle:shortVersionString>
+            <description><![CDATA[
+                <h2>What's New in 0.3.1</h2>
+                <ul>
+                    <li>Added BackupController with auto-recovery from backup</li>
+                    <li>Added Export/Import settings functionality in Settings > Advanced</li>
+                    <li>Settings now persist across uninstallation</li>
+                </ul>
+            ]]></description>
+            <pubDate>Wed, 12 Feb 2026 04:31:00 +0000</pubDate>
+            <enclosure 
+                url="https://parrotnavy.github.io/browser-chooser/dl/BrowserChooser-0.3.1.msi"
+                sparkle:version="0.3.1"
+                sparkle:shortVersionString="0.3.1"
+                length="1"
+                type="application/octet-stream"
+                sparkle:os="windows"
+                sparkle:signature="PLACEHOLDER_WILL_BE_REPLACED_BY_RELEASE_SCRIPT" />
+        </item>
     </channel>
 </rss>
