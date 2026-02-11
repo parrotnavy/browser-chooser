@@ -7,11 +7,11 @@
         <language>en</language>
 
         <item>
-      <title>Application 0.3.2</title>
-      <pubDate>Wed, 11 Feb 2026 17:16:27 +00:00</pubDate>
-      <sparkle:version>0.3.2</sparkle:version>
-      <sparkle:shortVersionString>0.3.2</sparkle:shortVersionString>
-      <enclosure url="https://parrotnavy.github.io/browser-chooser/dl/BrowserChooser-0.3.2.msi" sparkle:version="0.3.2" sparkle:shortVersionString="0.3.2" length="364544" sparkle:os="windows" type="application/octet-stream" sparkle:criticalUpdate="false" />
+      <title>Application 0.3.3</title>
+      <pubDate>Wed, 11 Feb 2026 17:22:29 +00:00</pubDate>
+      <sparkle:version>0.3.3</sparkle:version>
+      <sparkle:shortVersionString>0.3.3</sparkle:shortVersionString>
+      <enclosure url="https://parrotnavy.github.io/browser-chooser/dl/BrowserChooser-0.3.3.msi" sparkle:version="0.3.3" sparkle:shortVersionString="0.3.3" length="364544" sparkle:os="windows" type="application/octet-stream" sparkle:criticalUpdate="false" sparkle:signature="3ftN82OLj+05Wo8WxcfmmZgfx/VAVpSxHlbFhs2t4ISKtPC1Do9aSsEZiQPscDTBFURP7mzjOebTLQOpKGDXAQ==" />
     </item>
   <!-- Add new releases above this comment -->
         <!-- The release.sh script will automatically update this file -->
