@@ -1,12 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
         <title>Browser Chooser (Windows)</title>
         <link>https://parrotnavy.github.io/browser-chooser/</link>
         <description>Smart URL router for Windows</description>
         <language>en</language>
 
-        <!-- Add new releases above this comment -->
+        <item>
+      <title>Application 0.3.2</title>
+      <pubDate>Wed, 11 Feb 2026 17:16:27 +00:00</pubDate>
+      <sparkle:version>0.3.2</sparkle:version>
+      <sparkle:shortVersionString>0.3.2</sparkle:shortVersionString>
+      <enclosure url="https://parrotnavy.github.io/browser-chooser/dl/BrowserChooser-0.3.2.msi" sparkle:version="0.3.2" sparkle:shortVersionString="0.3.2" length="364544" sparkle:os="windows" type="application/octet-stream" sparkle:criticalUpdate="false" />
+    </item>
+  <!-- Add new releases above this comment -->
         <!-- The release.sh script will automatically update this file -->
     </channel>
 </rss>
