@@ -8,28 +8,5 @@
 
         <!-- Add new releases above this comment -->
         <!-- The release.sh script will automatically update this file -->
-        
-        <item>
-            <title>Version 0.2.8</title>
-            <sparkle:version>0.2.8</sparkle:version>
-            <sparkle:shortVersionString>0.2.8</sparkle:shortVersionString>
-            <description><![CDATA[
-                <h2>What's New in 0.2.8</h2>
-                <ul>
-                    <li>Added BackupController with auto-recovery from backup</li>
-                    <li>Added Export/Import settings functionality in Settings > Advanced</li>
-                    <li>Settings now persist across uninstallation</li>
-                    <li>Fixed version comparison bug in Sparkle auto-update</li>
-                </ul>
-            ]]></description>
-            <pubDate>Wed, 12 Feb 2026 04:31:00 +0000</pubDate>
-            <enclosure 
-                url="https://parrotnavy.github.io/browser-chooser/dl/Browser-Chooser-0.2.8.dmg"
-                sparkle:version="0.2.8"
-                sparkle:shortVersionString="0.2.8"
-                length="1"
-                type="application/octet-stream"
-                sparkle:edSignature="PLACEHOLDER_WILL_BE_REPLACED_BY_RELEASE_SCRIPT" />
-        </item>
     </channel>
 </rss>
