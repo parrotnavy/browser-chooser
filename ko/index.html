@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="ko">
+    <meta name="author" content="Browser Chooser Contributors">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <title>Browser Chooser - 스마트 URL 라우터</title>
+    <meta name="description"
+        content="macOS와 Windows를 위한 초경량 스마트 URL 라우터입니다. 링크를 브라우저 프로필에 자동으로 분기하고, 네이티브 성능으로 빠르게 동작합니다.">
+    <link rel="canonical" href="https://github.com/parrotnavy/browser-chooser/ko/">
+
+    <meta name="keywords"
+        content="browser chooser, url router, browser selector, link router, browser picker, macos browser, windows browser, multi-profile browser, browser automation">
+
+    <meta property="og:title" content="Browser Chooser - 스마트 URL 라우터">
+    <meta property="og:description"
+        content="링크를 올바른 브라우저 프로필로 자동 분기하세요. macOS와 Windows를 위한 네이티브 성능.">
+    <meta property="og:image"
+        content="https://github.com/parrotnavy/browser-chooser/raw/main/assets/img/og-image.png">
+    <meta property="og:url" content="https://github.com/parrotnavy/browser-chooser/ko/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Browser Chooser">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Browser Chooser - 스마트 URL 라우터">
+    <meta name="twitter:description"
+        content="링크를 올바른 브라우저 프로필로 자동 분기하세요. macOS와 Windows를 위한 네이티브 성능.">
+    <meta name="twitter:image"
+        content="https://github.com/parrotnavy/browser-chooser/raw/main/assets/img/og-image.png">
+
+    <link rel="dns-prefetch" href="https://github.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Browser Chooser",
+      "url": "https://github.com/parrotnavy/browser-chooser",
+      "logo": "https://github.com/parrotnavy/browser-chooser/raw/main/assets/img/og-image.png",
+      "description": "A smart URL router that puts you in control of which browser opens your links",
+      "sameAs": [
+        "https://github.com/parrotnavy/browser-chooser"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "url": "https://github.com/parrotnavy/browser-chooser/issues"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Browser Chooser",
+      "description": "A smart URL router that puts you in control of which browser opens your links. Route links to the right profile, strip tracking, and stay in flow.",
+      "url": "https://github.com/parrotnavy/browser-chooser",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": ["macOS", "Windows"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Browser Chooser Contributors"
+      },
+      "downloadUrl": "https://github.com/parrotnavy/browser-chooser/releases",
+      "softwareVersion": "0.3.1",
+      "image": "https://github.com/parrotnavy/browser-chooser/raw/main/assets/img/og-image.png"
+    }
+    </script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="logo">Browser Chooser</a>
+            <nav class="site-nav">
+                <a href="#features">기능</a>
+                <a href="#faq">FAQ</a>
+                <a href="https://github.com/parrotnavy/browser-chooser" target="_blank" rel="noopener">GitHub</a>
+                <a href="#download" class="btn btn-sm btn-primary">다운로드</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-pattern"></div>
+            <div class="container">
+                <h1 class="hero-title">
+                    macOS와 Windows를 위한<br>
+                    <span class="rotating-text">
+                        <span>스마트 URL 라우터</span>
+                        <span>개발자용</span>
+                        <span>파워 유저용</span>
+                        <span>프라이버시 중시</span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle">Browser Chooser로 링크 흐름을 제어하세요. <br />업무 링크는 Chrome으로, 개인 링크는 Safari로,
+                    추적 파라미터는 자동 제거합니다.</p>
+                <div class="hero-badge">
+                    <span>5MB 미만 • 네이티브 성능</span>
+                </div>
+                <div class="hero-actions">
+                    <button class="btn-3d" disabled>
+                        <span class="btn-text">macOS용 다운로드</span>
+                        <span class="btn-sub">곧 제공 예정</span>
+                    </button>
+                    <button class="btn-3d" disabled>
+                        <span class="btn-text">Windows용 다운로드</span>
+                        <span class="btn-sub">곧 제공 예정</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">이런 점이 좋습니다</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>스마트 라우팅</h3>
+                        <p>링크 목적지를 정확히 정의하세요. URL 패턴, 실행 앱, 보조 키 기준으로 분기할 수 있습니다. 업무 링크는 Work Chrome,
+                            개인 링크는 Safari로 보낼 수 있습니다.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔀</div>
+                        <h3>멀티 프로필</h3>
+                        <p>창 전환에 시간을 쓰지 마세요. Chrome, Edge, Brave, Vivaldi, Arc 프로필을 자동 인식하며 각 프로필을 개별 대상으로
+                            사용합니다.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>프라이버시 우선</h3>
+                        <p>링크를 자동 정리합니다. <code>utm_source</code>, <code>fbclid</code>, <code>gclid</code> 같은 추적 파라미터를
+                            브라우저로 전달하기 전에 제거합니다.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>직관적이고 아름다운 UI</h3>
+                        <p>규칙이 일치하지 않을 때도 깔끔하게 선택하세요. Row 레이아웃과 Radial 메뉴를 지원합니다.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>네이티브 속도</h3>
+                        <p>Swift 6(macOS)와 .NET 9(Windows)로 네이티브 구현했습니다. 즉시 실행되고 메모리 사용이 적으며 OS와 잘 어울립니다.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🪶</div>
+                        <h3>작은 용량</h3>
+                        <p>5MB 미만의 가벼운 앱입니다. 불필요한 의존성 없이 핵심 성능에 집중했습니다.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔗</div>
+                        <h3>URL 확장</h3>
+                        <p>이동 전에 목적지를 확인하세요. bit.ly, t.co 같은 단축 URL을 자동 확장해 더 정확한 라우팅을 지원합니다.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">⚙️</div>
+                        <h3>규칙 엔진</h3>
+                        <p>"contains", "regex", "ends with" 조건을 지원합니다. 위에서 아래로 평가되어 더 구체적인 규칙이 우선 적용됩니다.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📡</div>
+                        <h3>개발 친화적</h3>
+                        <p>커스텀 URL 스킴 API(<code>x-browser-chooser://</code>)를 사용해 스크립트에서 특정 브라우저를 직접 열 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">자주 묻는 질문</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>Browser Chooser는 왜 이렇게 작나요?</h4>
+                        <p>Browser Chooser는 Swift(macOS)와 .NET(Windows) 기반의 네이티브 앱입니다. Chromium 번들, Node.js 런타임이 없어
+                            5MB 미만 용량으로 빠르게 시작하고 메모리도 적게 사용합니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Browser Chooser는 무료인가요?</h4>
+                        <p>네, 무료로 사용할 수 있습니다. 구독도 없고 추적도 없습니다. 더 나은 브라우징 경험만 제공합니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>내 데이터는 어떻게 처리되나요?</h4>
+                        <p>프라이버시를 최우선으로 설계했습니다. URL 처리와 규칙 평가는 모두 로컬에서 수행되며, 방문 기록을 수집·저장·전송하지
+                            않습니다.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Windows에서도 사용할 수 있나요?</h4>
+                        <p>네. 많은 URL 라우터가 macOS 전용인 반면, Browser Chooser는 Windows 10/11 사용자에게도 네이티브 경험을 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download-cta">
+            <div class="container">
+                <h2>링크 흐름을 직접 제어해보세요</h2>
+                <p>운영체제에 맞는 최신 버전을 다운로드하세요.</p>
+                <div class="download-buttons">
+                    <button class="btn-3d" disabled>
+                        <span class="btn-text">macOS용 다운로드</span>
+                        <span class="btn-sub">곧 제공 예정</span>
+                    </button>
+                    <button class="btn-3d" disabled>
+                        <span class="btn-text">Windows용 다운로드</span>
+                        <span class="btn-sub">곧 제공 예정</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Browser Chooser</div>
+                <div class="footer-links">
+                    <a href="https://github.com/parrotnavy/browser-chooser" target="_blank" rel="noopener">GitHub</a>
+                    <a href="#">개인정보 처리방침</a>
+                    <a href="#">이용약관</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 Browser Chooser.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
