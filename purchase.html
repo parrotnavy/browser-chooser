@@ -55,16 +55,16 @@
     </script>
 </head>
 
-<body>
+<body data-clarity-page="purchase" data-clarity-locale="en">
 
     <header class="site-header">
         <div class="container">
-            <a href="index.html" class="logo">Browser Chooser</a>
+            <a href="index.html" class="logo" data-clarity-event="nav_home_click">Browser Chooser</a>
             <nav class="site-nav">
                 <a href="index.html#features">Features</a>
                 <a href="index.html#faq">FAQ</a>
-                <a href="https://github.com/parrotnavy/browser-chooser" target="_blank" rel="noopener">GitHub</a>
-                <a href="index.html#download" class="btn btn-sm btn-primary">Download</a>
+                <a href="https://github.com/parrotnavy/browser-chooser" target="_blank" rel="noopener" data-clarity-event="nav_github_click">GitHub</a>
+                <a href="index.html#download" class="btn btn-sm btn-primary" data-clarity-event="nav_download_click">Download</a>
             </nav>
         </div>
     </header>
@@ -87,14 +87,14 @@
                     <div class="price-selector">
                         <label for="price-slider">Choose your donation amount:</label>
                         <div class="slider-container">
-                            <input type="range" id="price-slider" min="5" max="100" value="25" step="5">
+                            <input type="range" id="price-slider" min="5" max="100" value="25" step="5" data-clarity-event="purchase_slider_change">
                             <div class="price-display">
                                 $<span id="price-value">25</span>
                             </div>
                         </div>
                     </div>
 
-                    <button id="buy-button" class="btn btn-primary">Purchase for $25</button>
+                    <button id="buy-button" class="btn btn-primary" data-clarity-event="purchase_buy_click">Purchase for $25</button>
 
                     <p class="purchase-note">
                         This is a donation to support the project. Browser Chooser will always remain free to use.
@@ -111,7 +111,7 @@
                 <div class="footer-logo">Browser Chooser</div>
                 <div class="footer-links">
                     <a href="https://github.com/parrotnavy/browser-chooser" target="_blank"
-                        rel="noopener">GitHub</a>
+                        rel="noopener" data-clarity-event="footer_github_click">GitHub</a>
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms</a>
                 </div>
@@ -122,6 +122,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/clarity-events.js"></script>
     <script src="assets/js/script.js"></script>
 
 </body>

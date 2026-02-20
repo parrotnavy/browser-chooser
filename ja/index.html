@@ -97,7 +97,7 @@
     </script>
 </head>
 
-<body>
+<body data-clarity-page="home" data-clarity-locale="ja">
 
     <header class="site-header">
         <div class="container">
@@ -105,8 +105,8 @@
             <nav class="site-nav">
                 <a href="#features">機能</a>
                 <a href="#faq">FAQ</a>
-                <a href="https://github.com/parrotnavy/browser-chooser" target="_blank" rel="noopener">GitHub</a>
-                <a href="#download" class="btn btn-sm btn-primary">ダウンロード</a>
+                <a href="https://github.com/parrotnavy/browser-chooser" target="_blank" rel="noopener" data-clarity-event="nav_github_click">GitHub</a>
+                <a href="#download" class="btn btn-sm btn-primary" data-clarity-event="nav_download_click">ダウンロード</a>
             </nav>
         </div>
     </header>
@@ -255,7 +255,7 @@
             <div class="footer-content">
                 <div class="footer-logo">Browser Chooser</div>
                 <div class="footer-links">
-                    <a href="https://github.com/parrotnavy/browser-chooser" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://github.com/parrotnavy/browser-chooser" target="_blank" rel="noopener" data-clarity-event="footer_github_click">GitHub</a>
                     <a href="#">プライバシーポリシー</a>
                     <a href="#">利用規約</a>
                 </div>
@@ -266,6 +266,7 @@
         </div>
     </footer>
 
+    <script src="../assets/js/clarity-events.js"></script>
 </body>
 
 </html>
