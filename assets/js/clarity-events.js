@@ -39,7 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Delegated click handler for elements with data-clarity-event attribute
     document.addEventListener('click', (e) => {
-        const target = e.target.closest('[data-clarity-event]');
+        const clickTarget = e.target;
+        if (!(clickTarget instanceof Element)) {
+            return;
+        }
+
+        const target = clickTarget.closest('[data-clarity-event]');
         if (target) {
             const eventName = target.getAttribute('data-clarity-event');
             if (eventName) {
@@ -48,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Expose consent hook globally for external use
+    // Expose consent hook globally for external use.
+    // Usage: window.setClarityConsent('granted'|'denied', 'granted'|'denied')
     window.setClarityConsent = setConsent;
 });
