@@ -1,0 +1,34 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inject Clarity Project ID
+        run: |
+          sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' index.html
+          sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' purchase.html
+          sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' es/index.html
+          sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' ja/index.html
+          sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' ko/index.html
+          sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' dl/index.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - id: deployment
+        uses: actions/deploy-pages@v4
