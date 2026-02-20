@@ -558,3 +558,57 @@ body:has(.purchase-card) .btn-primary {
     box-shadow: none;
     padding: 12px 24px;
 }
+
+/* =========================================
+   11. Legal Pages
+   ========================================= */
+.hero-legal {
+    padding: 150px 0 70px;
+}
+
+.hero-legal .hero-title {
+    font-size: 48px;
+}
+
+.hero-legal .hero-subtitle {
+    font-size: 18px;
+}
+
+.legal {
+    padding: 80px 0;
+    background: var(--color-bg-alt);
+}
+
+.legal .container {
+    max-width: 860px;
+}
+
+.legal-content h2 {
+    font-size: 28px;
+    margin-top: 48px;
+}
+
+.legal-content h3 {
+    font-size: 20px;
+    margin-top: 32px;
+}
+
+.legal-content p {
+    font-size: 16px;
+}
+
+.legal-content ul,
+.legal-content ol {
+    margin: 0 0 24px;
+    padding-left: 22px;
+}
+
+.legal-content li {
+    color: var(--color-text-secondary);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-legal .hero-title { font-size: 34px; }
+    .legal { padding: 60px 0; }
+}

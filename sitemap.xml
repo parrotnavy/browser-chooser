@@ -7,6 +7,18 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://parrotnavy.github.io/browser-chooser/privacy.html</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://parrotnavy.github.io/browser-chooser/terms.html</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://parrotnavy.github.io/browser-chooser/dl/</loc>
     <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
