@@ -27,14 +27,13 @@ jobs:
       - name: Inject Clarity Project ID
         run: |
           sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' index.html
-          sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' purchase.html
           sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' es/index.html
           sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' ja/index.html
           sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' ko/index.html
           sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' dl/index.html
       - name: Validate placeholder replacement
         run: |
-          if grep -r "__CLARITY_PROJECT_ID__" index.html purchase.html es/index.html ja/index.html ko/index.html dl/index.html; then
+          if grep -r "__CLARITY_PROJECT_ID__" index.html es/index.html ja/index.html ko/index.html dl/index.html; then
             echo "ERROR: __CLARITY_PROJECT_ID__ placeholder was not replaced. Check that CLARITY_PROJECT_ID secret is set correctly."
             exit 1
           fi
