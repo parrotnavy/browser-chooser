@@ -18,6 +18,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Verify Clarity secret is set
+        run: |
+          if [ -z "${{ secrets.CLARITY_PROJECT_ID }}" ]; then
+            echo "ERROR: CLARITY_PROJECT_ID secret is not set. Please add it in GitHub repository Settings > Secrets and variables > Actions."
+            exit 1
+          fi
       - name: Inject Clarity Project ID
         run: |
           sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' index.html
@@ -26,6 +32,13 @@ jobs:
           sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' ja/index.html
           sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' ko/index.html
           sed -i 's/__CLARITY_PROJECT_ID__/${{ secrets.CLARITY_PROJECT_ID }}/g' dl/index.html
+      - name: Validate placeholder replacement
+        run: |
+          if grep -r "__CLARITY_PROJECT_ID__" index.html purchase.html es/index.html ja/index.html ko/index.html dl/index.html; then
+            echo "ERROR: __CLARITY_PROJECT_ID__ placeholder was not replaced. Check that CLARITY_PROJECT_ID secret is set correctly."
+            exit 1
+          fi
+          echo "Placeholder replacement validated successfully."
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
