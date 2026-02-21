@@ -7,16 +7,16 @@
         <language>en</language>
 
                 <item>
-            <title>Version 0.4.0</title>
+            <title>Version 0.4.1</title>
             <link>https://github.com/parrotnavy/browser-chooser/releases</link>
-            <sparkle:version>0.4.0</sparkle:version>
-            <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
+            <sparkle:version>0.4.1</sparkle:version>
+            <sparkle:shortVersionString>0.4.1</sparkle:shortVersionString>
             <description>
                 &lt;h2&gt;What's New&lt;/h2&gt;\n                &lt;ul&gt;\n                    &lt;li&gt;Bug fixes and improvements&lt;/li&gt;\n                &lt;/ul&gt;
             </description>
-            <pubDate>Sat, 21 Feb 2026 14:23:50 +0000</pubDate>
+            <pubDate>Sat, 21 Feb 2026 16:50:51 +0000</pubDate>
             
-            <enclosure url="https://parrotnavy.github.io/browser-chooser/dl/Browser-Chooser-0.4.0.dmg" sparkle:version="0.4.0" sparkle:shortVersionString="0.4.0" length="3208356" type="application/octet-stream" sparkle:edSignature="YkcigK1hp24ASUpmz23u/lX6DeLupv/ompVbgbZeyHgAxUyF9X3W0rhYqm3r9ogkw8yp8t/g0BPUIRGluBN5BA==" />
+            <enclosure url="https://parrotnavy.github.io/browser-chooser/dl/Browser-Chooser-0.4.1.dmg" sparkle:version="0.4.1" sparkle:shortVersionString="0.4.1" length="3223540" type="application/octet-stream" sparkle:edSignature="tDrKdjv5JGc7CIilk6sjvDU67niqf9SB64htZ76Kw3zSCh4mGXpKQ8s+1rk1+VxrqvbMkhlj3zGgUructQLwBA==" />
         </item>
         
         <!-- Add new releases above this comment -->
