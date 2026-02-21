@@ -1,11 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
         <title>Browser Chooser (macOS)</title>
         <link>https://parrotnavy.github.io/browser-chooser/</link>
         <description>Smart URL router for macOS</description>
         <language>en</language>
 
+                <item>
+            <title>Version 0.4.0</title>
+            <link>https://github.com/parrotnavy/browser-chooser/releases</link>
+            <sparkle:version>0.4.0</sparkle:version>
+            <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
+            <description>
+                &lt;h2&gt;What's New&lt;/h2&gt;\n                &lt;ul&gt;\n                    &lt;li&gt;Bug fixes and improvements&lt;/li&gt;\n                &lt;/ul&gt;
+            </description>
+            <pubDate>Sat, 21 Feb 2026 14:23:50 +0000</pubDate>
+            
+            <enclosure url="https://parrotnavy.github.io/browser-chooser/dl/Browser-Chooser-0.4.0.dmg" sparkle:version="0.4.0" sparkle:shortVersionString="0.4.0" length="3208356" type="application/octet-stream" sparkle:edSignature="YkcigK1hp24ASUpmz23u/lX6DeLupv/ompVbgbZeyHgAxUyF9X3W0rhYqm3r9ogkw8yp8t/g0BPUIRGluBN5BA==" />
+        </item>
+        
         <!-- Add new releases above this comment -->
         <!-- The release.sh script will automatically update this file -->
     </channel>
