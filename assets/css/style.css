@@ -309,6 +309,16 @@ p {
     transform: rotateX(2deg);
     border: 1px solid rgba(0,0,0,0.05);
 }
+.hero-screenshot {
+    width: 100%;
+    max-width: 960px;
+    border-radius: 12px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
+    transform: rotateX(2deg);
+    border: 1px solid rgba(0,0,0,0.05);
+}
 
 .play-button {
     width: 80px;
