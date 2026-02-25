@@ -276,6 +276,28 @@ p {
     cursor: not-allowed;
 }
 
+.btn-3d[data-download-os="macos"] {
+    border: 1px solid rgba(30, 103, 154, 0.28);
+}
+
+.btn-3d[data-download-os="macos"] .btn-text {
+    color: var(--color-primary);
+}
+
+.btn-3d[data-download-os="macos"] .btn-sub {
+    color: #155d7a;
+}
+
+.btn-3d[data-download-os="macos"]:hover .btn-text,
+.btn-3d[data-download-os="macos"]:focus-visible .btn-text {
+    color: #155d7a;
+}
+
+.btn-3d[data-download-os="macos"]:focus-visible {
+    outline: 2px solid rgba(30, 103, 154, 0.35);
+    outline-offset: 2px;
+}
+
 .btn-text {
     font-size: 18px;
     font-weight: 700;
@@ -298,6 +320,9 @@ p {
 
 .hero-screenshots {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     transition: transform 0.15s ease-out;
     transform-style: preserve-3d;
     will-change: transform;
@@ -309,18 +334,21 @@ p {
     border: 1px solid rgba(0,0,0,0.05);
 }
 
+.hero-screenshot-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
 .hero-screenshot-main {
     width: 100%;
     display: block;
 }
 
+.hero-screenshot-rules,
 .hero-screenshot-prompt {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    width: 35%;
+    width: 100%;
     box-shadow: 0 25px 50px -12px rgba(0,0,0,0.35);
-    z-index: 2;
 }
 
 /* =========================================
@@ -507,10 +535,13 @@ p {
         padding: 120px 0 60px;
     }
     
-    .hero-screenshot-prompt {
-        width: 40%;
-        bottom: -10px;
-        right: -10px;
+    .hero-screenshots {
+        gap: 14px;
+    }
+
+    .hero-screenshot-row {
+        grid-template-columns: 1fr;
+        gap: 14px;
     }
     
     .faq-grid {

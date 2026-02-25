@@ -131,10 +131,10 @@
                     <span>5MB 미만 • 네이티브 성능</span>
                 </div>
                 <div class="hero-actions">
-                    <button class="btn-3d" disabled>
+                    <a class="btn-3d" href="../dl/" data-download-os="macos" data-download-base="../dl/" data-clarity-event="download_macos_click">
                         <span class="btn-text">macOS용 다운로드</span>
-                        <span class="btn-sub">곧 제공 예정</span>
-                    </button>
+                        <span class="btn-sub">최신 릴리스</span>
+                    </a>
                     <button class="btn-3d" disabled>
                         <span class="btn-text">Windows용 다운로드</span>
                         <span class="btn-sub">곧 제공 예정</span>
@@ -144,8 +144,12 @@
                     <div class="hero-screenshots">
                         <img src="../assets/img/screenshot-settings.png" alt="Browser Chooser Settings"
                             class="hero-screenshot hero-screenshot-main">
-                        <img src="../assets/img/screenshot-prompt.png" alt="Browser Chooser Prompt"
-                            class="hero-screenshot hero-screenshot-prompt">
+                        <div class="hero-screenshot-row">
+                            <img src="../assets/img/screenshot-rules.png" alt="Browser Chooser Rules Editor"
+                                class="hero-screenshot hero-screenshot-rules">
+                            <img src="../assets/img/screenshot-prompt.png" alt="Browser Chooser Prompt"
+                                class="hero-screenshot hero-screenshot-prompt">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -246,10 +250,10 @@
                 <h2>링크 흐름을 직접 제어해보세요</h2>
                 <p>운영체제에 맞는 최신 버전을 다운로드하세요.</p>
                 <div class="download-buttons">
-                    <button class="btn-3d" disabled>
+                    <a class="btn-3d" href="../dl/" data-download-os="macos" data-download-base="../dl/" data-clarity-event="download_macos_click">
                         <span class="btn-text">macOS용 다운로드</span>
-                        <span class="btn-sub">곧 제공 예정</span>
-                    </button>
+                        <span class="btn-sub">최신 릴리스</span>
+                    </a>
                     <button class="btn-3d" disabled>
                         <span class="btn-text">Windows용 다운로드</span>
                         <span class="btn-sub">곧 제공 예정</span>
@@ -277,6 +281,7 @@
     </footer>
 
     <script src="../assets/js/clarity-events.js"></script>
+    <script src="../assets/js/download-latest-macos.js"></script>
 
 <script>
         (function () {

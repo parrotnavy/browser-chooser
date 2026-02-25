@@ -131,10 +131,10 @@
                     <span>Menos de 5 MB • Rendimiento nativo</span>
                 </div>
                 <div class="hero-actions">
-                    <button class="btn-3d" disabled>
+                    <a class="btn-3d" href="../dl/" data-download-os="macos" data-download-base="../dl/" data-clarity-event="download_macos_click">
                         <span class="btn-text">Descargar para macOS</span>
-                        <span class="btn-sub">Próximamente</span>
-                    </button>
+                        <span class="btn-sub">Última versión</span>
+                    </a>
                     <button class="btn-3d" disabled>
                         <span class="btn-text">Descargar para Windows</span>
                         <span class="btn-sub">Próximamente</span>
@@ -144,8 +144,12 @@
                     <div class="hero-screenshots">
                         <img src="../assets/img/screenshot-settings.png" alt="Browser Chooser Settings"
                             class="hero-screenshot hero-screenshot-main">
-                        <img src="../assets/img/screenshot-prompt.png" alt="Browser Chooser Prompt"
-                            class="hero-screenshot hero-screenshot-prompt">
+                        <div class="hero-screenshot-row">
+                            <img src="../assets/img/screenshot-rules.png" alt="Browser Chooser Rules Editor"
+                                class="hero-screenshot hero-screenshot-rules">
+                            <img src="../assets/img/screenshot-prompt.png" alt="Browser Chooser Prompt"
+                                class="hero-screenshot hero-screenshot-prompt">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -253,10 +257,10 @@
                 <h2>¿Listo para tomar el control?</h2>
                 <p>Descarga la versión más reciente para tu sistema operativo.</p>
                 <div class="download-buttons">
-                    <button class="btn-3d" disabled>
+                    <a class="btn-3d" href="../dl/" data-download-os="macos" data-download-base="../dl/" data-clarity-event="download_macos_click">
                         <span class="btn-text">Descargar para macOS</span>
-                        <span class="btn-sub">Próximamente</span>
-                    </button>
+                        <span class="btn-sub">Última versión</span>
+                    </a>
                     <button class="btn-3d" disabled>
                         <span class="btn-text">Descargar para Windows</span>
                         <span class="btn-sub">Próximamente</span>
@@ -284,6 +288,7 @@
     </footer>
 
     <script src="../assets/js/clarity-events.js"></script>
+    <script src="../assets/js/download-latest-macos.js"></script>
 <script>
         (function () {
             const container = document.getElementById('heroTilt');
