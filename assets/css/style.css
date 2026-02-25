@@ -292,62 +292,35 @@ p {
 .hero-image-container {
     perspective: 1000px;
     padding: 0 20px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-.hero-image-placeholder {
-    width: 100%;
-    max-width: 960px;
-    height: 540px;
-    background: #fff;
-    border-radius: 12px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
+.hero-screenshots {
     position: relative;
-    transform: rotateX(2deg);
-    border: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.15s ease-out;
+    transform-style: preserve-3d;
+    will-change: transform;
 }
+
 .hero-screenshot {
-    width: 100%;
-    max-width: 960px;
     border-radius: 12px;
-    margin: 0 auto;
-    display: block;
     box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
-    transform: rotateX(2deg);
     border: 1px solid rgba(0,0,0,0.05);
 }
 
-.play-button {
-    width: 80px;
-    height: 80px;
-    background: var(--color-primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 10px 20px rgba(30, 103, 154, 0.4);
-    margin-bottom: 16px;
+.hero-screenshot-main {
+    width: 100%;
+    display: block;
 }
 
-.play-button::after {
-    content: '';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 12px 0 12px 20px;
-    border-color: transparent transparent transparent white;
-    margin-left: 4px;
-}
-
-.placeholder-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #999;
-    font-weight: 500;
+.hero-screenshot-prompt {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 35%;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.35);
+    z-index: 2;
 }
 
 /* =========================================
@@ -534,8 +507,10 @@ p {
         padding: 120px 0 60px;
     }
     
-    .hero-image-placeholder {
-        height: 300px;
+    .hero-screenshot-prompt {
+        width: 40%;
+        bottom: -10px;
+        right: -10px;
     }
     
     .faq-grid {

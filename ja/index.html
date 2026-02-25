@@ -140,8 +140,13 @@
                         <span class="btn-sub">近日公開</span>
                     </button>
                 </div>
-                <div class="hero-image-container">
-                    <img src="../assets/img/screenshot-settings.png" alt="Browser Chooser Settings" class="hero-screenshot">
+                <div class="hero-image-container" id="heroTilt">
+                    <div class="hero-screenshots">
+                        <img src="../assets/img/screenshot-settings.png" alt="Browser Chooser Settings"
+                            class="hero-screenshot hero-screenshot-main">
+                        <img src="../assets/img/screenshot-prompt.png" alt="Browser Chooser Prompt"
+                            class="hero-screenshot hero-screenshot-prompt">
+                    </div>
                 </div>
             </div>
         </section>
@@ -271,6 +276,29 @@
     </footer>
 
     <script src="../assets/js/clarity-events.js"></script>
+<script>
+        (function () {
+            const container = document.getElementById('heroTilt');
+            if (!container) return;
+            const inner = container.querySelector('.hero-screenshots');
+            if (!inner) return;
+
+            const MAX_TILT = 6; // degrees — subtle, just corners moving
+
+            container.addEventListener('mousemove', function (e) {
+                const rect = container.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;  // 0..1
+                const y = (e.clientY - rect.top) / rect.height;   // 0..1
+                const rotateY = (x - 0.5) * MAX_TILT * 2;  // -MAX_TILT to +MAX_TILT
+                const rotateX = (0.5 - y) * MAX_TILT * 2;  // inverted for natural feel
+                inner.style.transform = 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
+            });
+
+            container.addEventListener('mouseleave', function () {
+                inner.style.transform = 'rotateX(0deg) rotateY(0deg)';
+            });
+        })();
+    </script>
 </body>
 
 </html>
