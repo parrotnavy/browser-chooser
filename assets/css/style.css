@@ -6,10 +6,10 @@
     --color-bg: #ffffff;
     --color-text: #1d1d1f;
     --color-text-secondary: #555555;
-    --color-primary: #FA5726; /* Deep Orange */
-    --color-primary-gradient-start: #FF9247;
-    --color-primary-gradient-mid: #FF763A;
-    --color-primary-gradient-end: #FA5726;
+    --color-primary: #1E679A; /* Deep Blue */
+    --color-primary-gradient-start: #AEEAE2;
+    --color-primary-gradient-mid: #2E98B2;
+    --color-primary-gradient-end: #1E679A;
     
     --color-bg-alt: #f9f9f9;
     --color-border: #e5e5e5;
@@ -25,7 +25,7 @@
     
     /* Shadows */
     --shadow-card: 0 10px 20px -4px rgba(0,0,0,0.05), 0 2px 4px 0 rgba(0,0,0,0.05);
-    --shadow-button: 0 40px 40px 0 rgba(145,41,0,0.20), 0 4px 8px -2px rgba(0,0,0,0.08), 0 1px 1px 0 rgba(0,0,0,0.20), inset 0 -1px 3px 0 rgba(0,0,0,0.10), inset 0 2px 1px 0 #FFFFFF;
+    --shadow-button: 0 40px 40px 0 rgba(14,92,115,0.20), 0 4px 8px -2px rgba(0,0,0,0.08), 0 1px 1px 0 rgba(0,0,0,0.20), inset 0 -1px 3px 0 rgba(0,0,0,0.10), inset 0 2px 1px 0 #FFFFFF;
 }
 
 * {
@@ -49,7 +49,7 @@ a {
 }
 
 a:hover {
-    color: #d94012;
+    color: #155d7a;
 }
 
 img {
@@ -263,12 +263,12 @@ p {
 
 .btn-3d:hover {
     transform: translateY(-2px);
-    box-shadow: 0 45px 45px 0 rgba(145,41,0,0.25), 0 4px 8px -2px rgba(0,0,0,0.08), 0 1px 1px 0 rgba(0,0,0,0.20), inset 0 -1px 3px 0 rgba(0,0,0,0.10), inset 0 2px 1px 0 #FFFFFF;
+    box-shadow: 0 45px 45px 0 rgba(14,92,115,0.25), 0 4px 8px -2px rgba(0,0,0,0.08), 0 1px 1px 0 rgba(0,0,0,0.20), inset 0 -1px 3px 0 rgba(0,0,0,0.10), inset 0 2px 1px 0 #FFFFFF;
 }
 
 .btn-3d:active {
     transform: translateY(2px);
-    box-shadow: 0 30px 30px 0 rgba(145,41,0,0.15), 0 2px 4px -2px rgba(0,0,0,0.08), inset 0 -1px 3px 0 rgba(0,0,0,0.10), inset 0 2px 1px 0 #FFFFFF;
+    box-shadow: 0 30px 30px 0 rgba(14,92,115,0.15), 0 2px 4px -2px rgba(0,0,0,0.08), inset 0 -1px 3px 0 rgba(0,0,0,0.10), inset 0 2px 1px 0 #FFFFFF;
 }
 
 .btn-3d:disabled {
@@ -318,7 +318,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 20px rgba(250, 87, 38, 0.4);
+    box-shadow: 0 10px 20px rgba(30, 103, 154, 0.4);
     margin-bottom: 16px;
 }
 
@@ -500,7 +500,7 @@ p {
 }
 
 .btn-primary:hover {
-    background: #d94012;
+    background: #155d7a;
     transform: translateY(-1px);
 }
 
